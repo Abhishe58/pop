@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP IT</title>
+  </head>
+  <body>
+    <div class="head">
+      <h1>POP IT</h1>
+      <button id="restart" onClick="window.location.reload(true)">Restart </button>
+    </div>
+      <div class="container">
+       <div id="box1">
+     <div onclick="a()" class="circle"></div>
+     <div onclick="b()" class="circleb"></div>
+     <div onclick="c()" class="circlec"></div>
+     <div onclick="d()" class="circled"></div>
+     <div onclick="e()" class="circlee"></div>
+     <div onclick="f()" class="circlef"></div>
+       </div>
+       <div id="box2">
+     <div onclick="g()" class="circleg"></div>
+     <div onclick="h()" class="circleh"></div>
+     <div onclick="i()" class="circlei"></div>
+     <div onclick="j()" class="circlej"></div>
+     <div onclick="k()" class="circlek"></div>
+     <div onclick="l()" class="circlel"></div>
+       </div>
+       <div id="box3">
+    <div onclick="m()" class="circlem"></div>
+     <div onclick="n()" class="circlen"></div>
+     <div onclick="o()" class="circleo"></div>
+     <div onclick="pp()" class="circlepp"></div>
+     <div onclick="q()" class="circleq"></div>
+     <div onclick="r()" class="circler"></div>
+     </div>     
+       <div id="box4">
+      <div onclick="s()" class="circles"></div>
+     <div onclick="t()" class="circlet"></div>
+     <div onclick="u()" class="circleu"></div>
+     <div onclick="v()" class="circlev"></div>
+     <div onclick="w()" class="circlew"></div>
+     <div onclick="x()" class="circlex"></div>
+       </div>      
+       <div id="box5">
+     <div onclick="y()" class="circley"></div>
+     <div onclick="z()" class="circlez"></div>
+     <div onclick="aa()" class="circleaa"></div>
+     <div onclick="ab()" class="circleab"></div>
+     <div onclick="ac()" class="circleac"></div>
+     <div onclick="ad()" class="circlead"></div>
+       </div>      
+       <div id="box6">
+     <div onclick="ae()" class="circleae"></div>
+     <div onclick="af()" class="circleaf"></div>
+     <div onclick="ag()" class="circleag"></div>
+     <div onclick="ah()" class="circleah"></div>
+     <div onclick="ai()" class="circleai"></div>
+     <div onclick="aj()" class="circleaj"></div>
+       </div>       
+       <div id="box7">
+     <div onclick="ak()" class="circleak"></div>
+     <div onclick="al()" class="circleal"></div>
+     <div onclick="am()" class="circleam"></div>
+     <div onclick="an()" class="circlean"></div>
+     <div onclick="ao()" class="circleao"></div>
+     <div onclick="ap()" class="circleap"></div>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+  *
+  {
+    margin: 0;
+    padding: 0;
+    font-family: Monospace;
+  }
+  body
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-direction: column;
+  }
+  .head
+  {
+    height: 30px;
+    width: 100%;
+    padding: 10px;
+    background: #005e54;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+  }
+  .container
+  {
+    height: 70%;
+    width: 80%;
+    padding: px;
+    background-color: #272727;
+    margin-top: 10%;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: column;
+    box-shadow:  10px 0 20px rgba(0,0,0,5);
+  }
+  h1
+  {
+    position: relative;
+    left: 20px;
+    letter-spacing: 0.010em;
+  }
+  #restart
+  {
+    position: relative;
+    left: -20px;
+    height: 30px;
+    padding: 10px;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+  }
+  #box1
+  {
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+    background-color: yellow;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 5px;
+  }
+    #box2
+  {
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 5px;
+  }  
+  #box3
+  {
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 5px;
+  }  
+  #box4
+  {
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 5px;
+  } 
+  #box5
+  {
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+    background-color: purple;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 5px;
+  }  
+  #box6
+  {
+    height:45%;
+    width: 100%;
+    padding: 10px;
+    background-color: pink;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 5px;
+  }  
+  #box7
+  {
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+    background-color: gray;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    gap: 5px;
+  }
+  .circle
+  {
+    height: 40px;
+    width: 40px;
+    background-color: ;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0,0,0,5);
+  }
+   .active
+  {
+    
+    box-shadow: inset 0 0 40px rgba(0,0,0,5);
+  }
+    .circleb,.circlec
+  {
+    height: 40px;
+    width: 40px;
+    background-color: ;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0,0,0,5);
+  }
+      .circled,.circlee,.circlef,.circleg,.circleh,.circlei,.circlej,.circlek,.circlel,.circlem,.circlen,.circleo,.circlepp,.circleq,.circler,.circles,.circlet,.circleu ,.circlev,.circlew,.circlex,.circley,.circlez,.circleaa,.circleab,.circleac,.circlead,.circleae,.circleaf,.circleag,.circleah,.circleai,.circleaj,.circleak,.circleal,.circleam,.circlean,.circleao,.circleap
+  { 
+  
+    height: 40px;
+    width: 40px;
+    background-color: ;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0,0,0,5);
+  }
+   .activeb,.activec,.activef,.activeg,.activeh,.activei,.activej,.activek,.activel,.activem,.activen,.activeo
+  {
+    
+    box-shadow: inset 0 0 40px rgba(0,0,0,5);
+  }
+  .actived,.activee,.activepp,.activeq,.activer,.actives,.activet,.activeu,.activev,.activew,.activex,.activey,.activez,.activeaa,.activeab,.activeac,.activead,.activeae,.activeah,.activeag,.activeai,.activeaf,.activeaj,.activeak,.activeal,.activeam,.activean,.activeap,.activeao
+  {
+    
+    box-shadow: inset 0 0 40px rgba(0,0,0,5);
+  }
+</style>
+<script>
+   function a(){
+     var circle = document.querySelector('.circle');
+      circle.classList.add('active');
+      var audio = new Audio('pop.mp3');
+      audio.play()
+   }
+    function b(){
+     var circleb = document.querySelector('.circleb');
+      circleb.classList.add('activeb');
+      var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function c(){
+     var circlec = document.querySelector('.circlec');
+      circlec.classList.add('activec');
+      var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function d(){
+     var circled = document.querySelector('.circled');
+      circled.classList.add('actived');
+      var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function e(){
+     var circlee = document.querySelector('.circlee');
+      circlee.classList.add('activee');
+      var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function f(){
+     var circlef = document.querySelector('.circlef');
+      circlef.classList.add('activef');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function g(){
+     var circleg = document.querySelector('.circleg');
+      circleg.classList.add('activeg');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function h(){
+     var circleh = document.querySelector('.circleh');
+      circleh.classList.add('activeh');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function i(){
+     var circlei = document.querySelector('.circlei');
+      circlei.classList.add('activei');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function j(){
+     var circlej = document.querySelector('.circlej');
+      circlej.classList.add('activej');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function k(){
+     var circlek = document.querySelector('.circlek');
+      circlek.classList.add('activek');
+      var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function l(){
+     var circlel = document.querySelector('.circlel');
+      circlel.classList.add('activel');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function m(){
+     var circlem = document.querySelector('.circlem');
+      circlem.classList.add('activem');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function n(){
+     var circlen = document.querySelector('.circlen');
+      circlen.classList.add('activen');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function o(){
+     var circleo = document.querySelector('.circleo');
+      circleo.classList.add('activeo');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+      function pp(){
+     var circlepp = document.querySelector('.circlepp');
+      circlepp.classList.add('activepp');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function q(){
+     var circleq = document.querySelector('.circleq');
+      circleq.classList.add('activeq');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function r(){
+     var circler = document.querySelector('.circler');
+      circler.classList.add('activer');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function s(){
+     var circles = document.querySelector('.circles');
+      circles.classList.add('actives');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function t(){
+     var circlet = document.querySelector('.circlet');
+      circlet.classList.add('activet');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function u(){
+     var circleu = document.querySelector('.circleu');
+      circleu.classList.add('activeu');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function w(){
+     var circlew = document.querySelector('.circlew');
+      circlew.classList.add('activew');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function x(){
+     var circlex = document.querySelector('.circlex');
+      circlex.classList.add('activex');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function y(){
+     var circley = document.querySelector('.circley');
+      circley.classList.add('activey');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function z(){
+     var circlez = document.querySelector('.circlez');
+      circlez.classList.add('activez');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function v(){
+     var circlev = document.querySelector('.circlev');
+      circlev.classList.add('activev');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function aa(){
+     var circleaa = document.querySelector('.circleaa');
+      circleaa.classList.add('activeaa');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ab(){
+     var circleab = document.querySelector('.circleab');
+      circleab.classList.add('activeab');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ac(){
+     var circleac = document.querySelector('.circleac');
+      circleac.classList.add('activeac');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ad(){
+     var circlead = document.querySelector('.circlead');
+      circlead.classList.add('activead');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ae(){
+     var circleae = document.querySelector('.circleae');
+      circleae.classList.add('activeae');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function af(){
+     var circleaf= document.querySelector('.circleaf');
+      circleaf.classList.add('activeaf');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ag(){
+     var circleag = document.querySelector('.circleag');
+      circleag.classList.add('activeag');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ah(){
+     var circleah = document.querySelector('.circleah');
+      circleah.classList.add('activeah');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ai(){
+     var circleai = document.querySelector('.circleai');
+      circleai.classList.add('activeai');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function aj(){
+     var circleaj = document.querySelector('.circleaj');
+      circleaj.classList.add('activeaj');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ak(){
+     var circleak = document.querySelector('.circleak');
+      circleak.classList.add('activeak');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function al(){
+     var circleal = document.querySelector('.circleal');
+      circleal.classList.add('activeal');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function am(){
+     var circleam = document.querySelector('.circleam');
+      circleam.classList.add('activeam');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function an(){
+     var circlean = document.querySelector('.circlean');
+      circlean.classList.add('activean');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ao(){
+     var circleao = document.querySelector('.circleao');
+      circleao.classList.add('activeao');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    function ap(){
+     var circleap = document.querySelector('.circleap');
+      circleap.classList.add('activeap');var audio = new Audio('pop.mp3');
+      audio.play()
+    }
+    
+    </script>
